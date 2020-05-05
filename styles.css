@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+header{
+    margin-bottom: 20px;
+}
+
+form input{
+    padding: 5px;
+    line-height: 25px;
+    text-indent: 8px;
+    font-size: 16px;
+    max-width: 230px;
+    border: 1px solid #333;
+    background: #fff;
+}
+.submitBtn{
+    background:#005ce6;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+.submitBtn:hover{
+    background: #014fc4;
+}
+.col{
+    height: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-width: 180px;
+}
+.col img{
+    width: 100%;
+    display:flex;
+}
+.row{
+    display: flex;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 4rem;
+    color: #005ce6;
+    font-weight: bold;
+}
+footer{
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    border-top: 1px solid #888;
+    padding: 15px 0;
+}
+
+select{
+    padding: 5px;
+    border: 1px solid #333;
+    outline: none;
+}
+.people{
+    width: max-content;
+}
+#scrollTopBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 0 10px 0px rgb(21, 100, 247);
+    display: none;
+    z-index: 10;
+}
+#next{
+    width: 100px;
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.alert p{
+    font-size: 16px;
+}
+.alert a{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 500px){
+       #next{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 712px){
+    body{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    select{
+        margin-top: 8px;
+    }
+}

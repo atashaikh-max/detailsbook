@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detailsbook™</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <p>To save the pictures, <a href="#" class="alert-link">Sign in</a>.</p>
+             </div>
+
+            <header>
+                 <h1>detailsBook</h1>
+                 <div>
+				      <a href="index.html">Home</a>
+				      <a href="about.html">About</a>
+				      <a href="help.html">Help</a>
+				    </div>
+            </header>
+        <div class="searchForm" id="searchForm">
+            <form>
+                <input type="text" placeholder="search by name" id="searchInput">
+                <button type="submit" class="submitBtn" id="searchBtn">Search</button>
+                <select name="gender" id="gender" class="gender">
+                    <option value="all" onclick="location.reload()">All</option>
+                    <option value="male" onclick="location.reload()">Male</option>
+                    <option value="female" onclick="location.reload()">Female</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="container mt-3" >
+            <div id="details" class="row">
+                
+            </div>
+        </div>
+        <button class="btn btn-dark mb-3 mt-3 align-self-center" id="next" onclick="loadUser()">Next</button>
+    </div>
+    <button class="btn btn-primary" id="scrollTopBtn"><i class="fa fa-chevron-up"></i></button>
+    <footer>
+    <p>An Ata Shaikh production DetailsBook &copy; 2020.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
